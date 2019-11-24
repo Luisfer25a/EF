@@ -1,0 +1,45 @@
+
+
+<div class="col-md-10 offset-md-1">
+    <div class="card bg-transparent border-dark">
+      <div class="card-body">
+        <form action="">
+          <div class="form-group" >
+            <input type="text" name="nombre" [(ngModel)]="cancion.nombre" placeholder="Nombre" class="form-control" style=" font-size: medium;background-color:darkcyan; color: white;" autofocus>
+          </div>
+          <div class="form-group">
+            <input type="text" name="artista" [(ngModel)]="cancion.artista" placeholder="Artista" class="form-control" style="font-size: medium; background-color:darkcyan; color: white;">
+          </div>
+          <div class="form-group">
+            <input type="text" name="album" [(ngModel)]="cancion.album" placeholder="Album" class="form-control" style="font-size: medium; background-color:darkcyan; color: white;">
+          </div>
+          <div class="form-group">
+            <input type="text" name="genero" [(ngModel)]="cancion.genero" placeholder="Género" class="form-control" style="font-size: medium; background-color:darkcyan; color: white;">
+          </div>
+          <div class="form-group">
+            <input type="text" name="duracion" [(ngModel)]="cancion.duracion" placeholder="Duracion" class="form-control" style="font-size: medium; background-color:darkcyan; color: white;">
+          </div>
+	<div class="modal" id="myModal" role="dialog">
+    	 <div class="modal-dialog">
+	      <div class="modal-content">
+		<div class="modal-header">
+		  <h4 class="modal-title"> Éxito </h4>
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
+		</div>
+		<div class="modal-body">
+		  <p>Registro guardado exitosamente.</p>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-default" data-dismiss="modal"(click)="edit ? updateSong() : saveNewSong()">Cerrar</button>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+          <button data-toggle="modal" data-target="#myModal" class="btn btn-success btn-block" style="background-color:indigo;">
+            Guardar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  

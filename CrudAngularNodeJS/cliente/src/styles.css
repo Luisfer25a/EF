@@ -1,0 +1,60 @@
+.big-banner{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(26,26,26,0.7),rgba(26,26,26,0.7)),url("../src/images/imageback.jpg");
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    line-height: 0%;
+    display: block;
+}
+
+body {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+    font-size: 13px;
+    background: linear-gradient(rgba(26,26,26,0.7),rgba(26,26,26,0.7)),url("../src/images/imageback.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background:transparent;
+    display: block;
+    height: 100%;
+    position: fixed; 
+        overflow:auto;
+    width: 100%;
+    position: absolute;
+    line-height: 0%;
+}
+html {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+    font-size: 13px;
+    background: linear-gradient(rgba(26,26,26,0.7),rgba(26,26,26,0.7)),url("../src/images/imageback.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background:transparent;
+    display: block;
+    height: 100%;
+    position: fixed; 
+        overflow-y:hidden;
+    width: 100%;
+    position: absolute;
+    line-height: 0%;
+}
+
+
+footer{
+    height: 0px;
+    background-color: red;
+    align-content: center;
+    text-align: center;
+}
+

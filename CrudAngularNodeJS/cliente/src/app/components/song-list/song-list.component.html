@@ -1,0 +1,50 @@
+
+<div class="modal" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title"> Éxito </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Registro eliminado exitosamente.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="container mt-10">
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr style="color:white;">
+              <td >Nombre</td>
+              <td>Artista</td>
+              <td>Album</td>
+              <td>Género</td>
+              <td >Duración</td>
+            </tr>
+          </thead>
+          <tbody>
+                <tr style="color:white" *ngFor="let song of songs" >
+                  <td style = "word-wrap: normal"> {{song.nombre}}</td>
+                  <td style = "word-wrap: normal">{{song.artista}}</td>
+                  <td style = "word-wrap: normal">{{song.album}}</td>
+                  <td style = "word-wrap: normal">{{song.genero}}</td>
+                  <td style = "word-wrap: normal">{{song.duracion}}</td>
+                  <td >
+                    <a [routerLink]="['/songs/edit',song._id]" class="btn btn-info" style="background-color: indigo;">Editar</a>
+                    <a data-toggle="modal" data-target="#myModal" class="btn btn-info" style=" background-color: darkred;" (click)="deleteSong(song._id)">Eliminar</a>
+                  </td>
+                </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <footer class="navbar-fixed-bottom">
+    <h3 style="color: white;">El contenido mostrado en esta página puede estar desfasado por 30 segundos o menos con el real</h3>
+  </footer>
